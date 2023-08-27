@@ -1,48 +1,229 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Netflix sans','Helvetica Neue',"Roboto", sans-serif;
+}
+#container{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .sign-in-page{
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.928) , rgba(0, 0, 0, 0.146), rgba(0, 0, 0, 0.928) ), url("Image/background_img.jpg");
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.928) , rgba(0, 0, 0, 0.368), rgba(0, 0, 0, 0.928) ), url("Image/background_img.jpg");
     background-size: cover;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     position: relative;
+
 }
 .nav-bar{
-    margin-left: 11%;
-    margin-right: 11%;
+    padding-left: 11%;
+    padding-right: 11%;
     width: 100%;
     height: 12%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.image{
+.logo{
     width: 75%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.image img{
-    
+.logo img{    
     width: 148px;
     height: 40px;
 }
 .nav-bar select{
-    align-self: right;
-    justify-self: right;
-    background-color: rgba(0, 0, 0, 0.496);
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: rgba(205, 203, 203, 0.106);
     color: white;
-    width: 11%;
-    height: 40%;
+    width: 126px;
+    height: 32px;
+    padding: 0.2rem;
+    line-height: 1.25rem;
+    border-radius: 3px;
+}
+
+.nav-bar option{
+    background-color: white;
+}
+.nav-bar a{
+    width: 77px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    background-color: #E50914;
+    border-radius: 3px;
+}
+
+.main{
+    font-family: 'Bebas Neue';
+    width: 100%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container{
+    text-align: center;
+    margin-top: calc(12% + 10px);
+    margin-bottom: calc(12% + 10px);
+    margin-left: calc(10% + 40px);
+    margin-right: calc(10% + 40px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.main-container h1{
+    font-weight: bolder;
+    color: white;
+    font-size: 3rem;
+}
+.main-container p{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.sign-in{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in h3{
+    color: white;
+    font-size: 1.27rem;
+    font-weight: lighter;
+    margin-top: 1.5rem;
+}
+.mail-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 100px;
+}
+.mail-box input{
+    width: 65%;
+    border-radius: 5px;
+    background-color: rgba(49, 49, 49, 0.297);
+    border: 1px solid rgb(128, 128, 128);
+    font-size: 1.1rem;
+    color: white;
+    padding-left: 15px;
+}
+.mail-box button{
+    width: 33%;
+    border-radius: 5px;
+    background-color: #E50914;
+    color: white;
+    font-size: 1.7rem;
+    border: none;
+}
+.view{
+    height:80%;
+    padding: 2% 0;
+    border-top: 8px solid rgb(86, 86, 86);
+    background-color: black;
+    display: flex;
+    flex-direction: wrap;
+}
+.box{
+    margin: 0 12%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.image{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: calc(100% - 80px);
+    height: calc(100% - 100px);
+    object-fit: cover;
+}
+.boxshot{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 25px;
+    width: 65%;
+    height: 104px;
+    padding: 2%;
+    background-color: black;
+    border: 2px solid rgb(93, 93, 93);
+    border-radius: 10px;
+}
+.boxshot-image{
+    height: 100%;
+    display: flex;
+    width: 25%;
+}
+.boxshot-image img{
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+}
+.right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right h4{
+    color: white;
+    letter-spacing: 1px;
+}
+.right p{
+    font-size: 0.9rem;
+    color: #0071EB;
+}
+.boxshot i{
+    font-size: 1.2rem;
+    margin: auto 0;
+    text-align: center;
+    width: 15%;
+    color: #0071EB;
+}
+.text{
+    width: 50%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.text h1{
+    font-size: 3rem;
+    height: fit-content;
+}
+.text p{
+    height: fit-content;
+    margin-top:2%;
+    font-size: 1.5rem;
 }

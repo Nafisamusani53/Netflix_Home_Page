@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="container">
+    <div id="container">
         <div class="sign-in-page">
             <div class="nav-bar">
-                <div class="image">
+                <div class="logo">
                     <img src="Image/Netflix_2015_logo.svg.png" alt="">
                 </div>
                 <select name="lang" id="lang">
@@ -23,8 +25,78 @@
                 </select>
                 <a href="#">Sign In</a>
             </div>
-            <div class="sign-in"></div>
+            <div class="main">
+                <div class="main-container">
+                    <h1>Laughter. Tears. Thrills. Find it all on Netflix.</h1>
+                    <p>Endless Entertainment starts at just &#x20b9 149. Cancel Anytime.</p>
+                    <div class="sign-in">
+                        <form action="#">
+                            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                            <div class="mail-box">
+                                <input type="email" minlength="5" maxlength="50" name="email"
+                                    placeholder="Email address">
+                                <button type="submit" role="button">Get Started </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view" id="tv">
+            <div class="box">
+                <div class="text">
+                    <h1>Enjoy on your TV</h1>
+                    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                </div>
+                <div class="image">
+                    <img src="image/tv.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="view" id="mobile">
+            <div class="box">
+                <div class="image">
+                    <img src="image/mobile-0819.jpg" alt="">
+                    <div class="boxshot">
+                        <div class="boxshot-image">
+                            <img src="Image/boxshot.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h4>Stranger Things</h4>
+                            <p>Downloading...</p>
+                        </div>
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                </div>
+                <div class="text">
+                    <h1>Download your shows to watch offline</h1>
+                    <p>Save your favourites easily and always have something to watch.</p>
+                </div>
+            </div>
+        </div>
+        <div class="view" id="everywhere">
+            <div class="box">
+                <div class="text">
+                    <h1>Watch everywhere</h1>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+                <div class="image">
+                    <img src="image/device-pile-in.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="view" id="everywhere">
+            <div class="box">
+                <div class="image">
+                    <img src="image/kids.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Create profiles for kids</h1>
+                    <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
