@@ -7,7 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Netflix sans','Helvetica Neue',"Roboto", sans-serif;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,
+    sans-serif;
 }
 #container{
     height: 100vh;
@@ -47,14 +48,14 @@
 }
 .lang{
     text-align: center;
-    font-size: 1.1rem;
+    font-size: calc(13px + 0.390625vw);
     background-color: rgba(205, 203, 203, 0.106);
     color: white;
     width: 126px;
     height: 32px;
-    padding: 0.2rem;
     line-height: 1.25rem;
     border-radius: 3px;
+    margin-right: 5px;
 }
 
 .nav-bar option{
@@ -68,7 +69,7 @@
     align-items: center;
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: calc(13px + 0.390625vw);
     background-color: #E50914;
     border-radius: 3px;
 }
@@ -82,11 +83,9 @@
     align-items: center;
 }
 .main-container{
+    height: 100%;
     text-align: center;
-    margin-top: calc(12% + 10px);
-    margin-bottom: calc(12% + 10px);
-    margin-left: calc(10% + 40px);
-    margin-right: calc(10% + 40px);
+    margin: 12% 10% 6.5% 6.5%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -94,12 +93,12 @@
 .main-container h1{
     font-weight: bolder;
     color: white;
-    font-size: 3rem;
+    font-size: 3.5vw;
 }
 .main-container p{
     color: white;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
+    font-size: 1.8vw;
+    margin-top: 2%;
 }
 .sign-in{
     margin: 0 auto;
@@ -110,9 +109,10 @@
 }
 .sign-in h3{
     color: white;
-    font-size: 1.27rem;
-    font-weight: lighter;
+    font-size: 1.5vw;
+    font-weight: 400;
     margin-top: 1.5rem;
+    text-align: center;
 }
 .mail-box{
     width: 100%;
@@ -136,10 +136,11 @@
     border-radius: 5px;
     background-color: #E50914;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.7vw;
     border: none;
 }
 .view{
+    width: 100%;
     height:80%;
     padding: 2% 0;
     border-top: 8px solid rgb(86, 86, 86);
@@ -147,7 +148,7 @@
     display: flex;
 }
 .box{
-    margin: 0 12%;
+    margin: 0 9%;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -160,8 +161,8 @@
     align-items: center;
 }
 .image img{
-    width: calc(100% - 80px);
-    height: calc(100% - 100px);
+    width: 100%;
+    height:auto;
     object-fit: cover;
 }
 .boxshot{
@@ -183,8 +184,8 @@
     width: 25%;
 }
 .boxshot-image img{
-    height: 100%;
-    width: 90%;
+    height: auto;
+    width: auto;
     object-fit: cover;
 }
 .right{
@@ -218,12 +219,13 @@
     align-items: flex-start;
 }
 .text h1{
-    font-size: 3rem;
+    font-size: 3.5vw;
     height: fit-content;
 }
 .text p{
     height: fit-content;
     margin-top:2%;
+    margin-right: 2%;
     font-size: 1.5rem;
 }
 .about{
@@ -242,7 +244,7 @@
 }
 .about-container h1{
     color: white;
-    font-size: 3rem;
+    font-size: 4vw;
     font-weight: 2rem;
     text-align: center;
 }
@@ -273,6 +275,7 @@
     border-top: 8px solid rgb(86, 86, 86);
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
 }
 .contact-us a{
     color: rgb(165, 164, 164);
@@ -289,7 +292,7 @@
 .help{
     display: flex;
     flex-wrap: wrap;
-    gap: 250px;
+    gap: 20vw;
 
 }
 .col{
